@@ -1,19 +1,26 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Sidebar from "./components/Sidebar";
+import TopNav from "./components/TopNav";
+import Dashboard from "./pages/Dashboard";
+import Home from "./pages/Home";
+import Analytics from "./pages/Analytics";
+import Properties from "./pages/Properties";
+import Schedule from "./pages/Schedule";
+import Setting from "./pages/Setting";
 
 function App() {
   return (
     <Router>
-      <div className="flex min-h-screen bg-gray-50">
+      <div className="flex min-h-screen">
         <Sidebar />
-        <main className="ex-1 p-8 transition-all duration-300 ease-in-out">
+        <main className="flex-1 transition-all duration-300 ease-in-out ml-24">
           <Routes>
-            <Route path="/" element={<h1 className="text-2xl font-semibold">Dashboard</h1>} />
-            <Route path="/home" element={<h1 className="text-2xl font-semibold">Home</h1>} />
-            <Route path="/analytics" element={<h1 className="text-2xl font-semibold">Analytics</h1>} />
-            <Route path="/properties" element={<h1 className="text-2xl font-semibold">Properties</h1>} />
-            <Route path="/schedule" element={<h1 className="text-2xl font-semibold">Schedule</h1>} />
-            <Route path="/settings" element={<h1 className="text-2xl font-semibold">Settings</h1>} />
+            <Route path="/" element={<Dashboard />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/analytics" element={<Analytics />} />
+            <Route path="/properties" element={<Properties />} />
+            <Route path="/schedule" element={<Schedule />} />
+            <Route path="/settings" element={<Setting />} />
           </Routes>
         </main>
       </div>

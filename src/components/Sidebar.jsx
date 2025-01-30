@@ -15,7 +15,7 @@ const Sidebar = () => {
   const location = useLocation();
 
   return (
-    <div className="h-screen w-24 bg-white border-r border-gray-200 flex flex-col items-center">
+    <div className="fixed left-0 top-0 h-screen w-24 bg-white border-r border-gray-200 flex flex-col items-center">
       <img src="/logo.svg" alt="Reeltor Dashboard" className="h-8 my-8" />
 
       <nav className="flex flex-col items-center gap-10 m-6">
