@@ -61,7 +61,6 @@ reeltor-dashboard/
 ├── src/
 │   ├── components/     # Reusable UI components
 │   ├── pages/         # Page components
-│   ├── utils/         # Utility functions
 │   ├── App.jsx        # Main application component
 │   └── main.jsx       # Application entry point
 ├── public/            # Static assets
