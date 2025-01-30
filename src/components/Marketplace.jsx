@@ -5,10 +5,10 @@ import Rating from "./Rating";
 
 const Marketplace = ({ data }) => {
   return (
-    <div className="w-md px-8 py-10">
-      <SectionHeader title="NFT Marketplace" />
+    <div className="ml-6 mr-8 my-10">
+      < SectionHeader title="NFT Marketplace" />
 
-      <div className="w-full h-md overflow-hidden rounded-lg relative">
+      <div className="max-w-md h-md overflow-hidden rounded-lg relative">
         <div className="absolute top-4 left-4 z-10 gap-3 flex">
           {data.badges.map((badge, index) => (
             <Badges key={index} title={badge} />
@@ -52,7 +52,7 @@ const Marketplace = ({ data }) => {
           </div>
         </div>
       </div>
-    </div>
+    </div >
   );
 };
 

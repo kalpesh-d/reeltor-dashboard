@@ -1,6 +1,7 @@
 import Investment from "../components/Investment";
 import Marketplace from "../components/Marketplace";
 import TopNav from "../components/TopNav";
+import CreditCard from "../components/CreditCard";
 
 function Dashboard() {
   const marketplaceData = {
@@ -23,9 +24,12 @@ function Dashboard() {
   return (
     <div>
       <TopNav pageTitle="Dashboard" />
-      <div className="flex">
-        <Marketplace data={marketplaceData} />
-        <Investment />
+      <div className="flex justify-between">
+        <div className="flex">
+          <Marketplace data={marketplaceData} />
+          <Investment />
+        </div>
+        <CreditCard />
       </div>
     </div>
   );
