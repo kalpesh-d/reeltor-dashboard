@@ -13,7 +13,7 @@ function App() {
     <Router>
       <div className="flex min-h-screen">
         <Sidebar />
-        <main className="flex-1 transition-all duration-300 ease-in-out ml-24">
+        <main className="flex-1 transition-all duration-300 ease-in-out ml-24 bg-[#fafafa]">
           <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="/home" element={<Home />} />

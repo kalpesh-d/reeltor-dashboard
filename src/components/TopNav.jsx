@@ -2,7 +2,7 @@ import { Bell } from "lucide-react";
 
 const TopNav = ({ pageTitle }) => {
   return (
-    <div className="h-24 border-b border-gray-200 flex items-center justify-between px-8 ">
+    <div className="h-24 border-b border-gray-200 flex items-center justify-between px-8 bg-white">
       <h1 className="text-2xl font-semibold text-slate-700">{pageTitle}</h1>
       <div className="flex items-center gap-8">
         {/* Notification */}
