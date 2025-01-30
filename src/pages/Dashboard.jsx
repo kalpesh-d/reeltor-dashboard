@@ -1,3 +1,4 @@
+import Investment from "../components/Investment";
 import Marketplace from "../components/Marketplace";
 import TopNav from "../components/TopNav";
 
@@ -22,7 +23,10 @@ function Dashboard() {
   return (
     <div>
       <TopNav pageTitle="Dashboard" />
-      <Marketplace data={marketplaceData} />
+      <div className="flex">
+        <Marketplace data={marketplaceData} />
+        <Investment />
+      </div>
     </div>
   );
 }
