@@ -10,7 +10,6 @@ A modern real estate investment dashboard built with React and Vite, featuring p
 - 📈 Performance Analytics
 - 💳 Payment Integration
 - 🎨 Modern UI with Animations
-- 📱 Responsive Design
 
 ## Prerequisites
 
