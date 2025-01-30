@@ -62,7 +62,7 @@ const Nft = () => {
   ];
 
   return (
-    <div className="w-1/3 ml-6 mr-8 my-10">
+    <div className="w-1/3 ml-6 mr-8 my-4">
       <SectionHeader title="NFTs Owned" />
       <div className="rounded-xl mt-4 w-full">
         {nfts.map((nft, index) => (

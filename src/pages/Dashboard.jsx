@@ -3,6 +3,7 @@ import Marketplace from "../components/Marketplace";
 import TopNav from "../components/TopNav";
 import CreditCard from "../components/CreditCard";
 import Nft from "../components/Nft";
+import Portfolio from "../components/Portfolio";
 
 function Dashboard() {
   const marketplaceData = {
@@ -23,7 +24,7 @@ function Dashboard() {
   };
 
   return (
-    <div>
+    <div className="container mx-auto">
       <TopNav pageTitle="Dashboard" />
       <div className="flex justify-between">
         <div className="flex flex-col">
@@ -31,8 +32,9 @@ function Dashboard() {
             <Marketplace data={marketplaceData} />
             <Investment />
           </div>
-          <div>
+          <div className="flex">
             <Nft />
+            <Portfolio />
           </div>
         </div>
         <CreditCard />
